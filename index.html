@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+
+    <title>Weather App</title>
+</head>
+<body>
+    
+    <div class="container">
+        <header class="mainHeader">Weather App</header>
+
+        <div class="row row-cols-2">
+
+          <div class="col-4">
+            <div class="input-group mb-3" id="searchBar">
+                <form class="input-group-append">
+                    <input id="searchCity" type="text" class="form-control" placeholder="Search City" aria-label="Search City" aria-describedby="button-addon2">
+                    <button class="btn btn-outline-secondary" type="submit" id="button-addon2 submitBtn" value="search city">Go</button>
+                </form>
+              </div>
+
+              <div class="card" style="width: 18rem;">
+                <div class="card-header">
+                  Previous Searches
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Cras justo odio</li>
+                  <li class="list-group-item">Dapibus ac facilisis in</li>
+                  <li class="list-group-item">Vestibulum at eros</li>
+                </ul>
+              </div>
+
+          </div>
+
+          <div class="col-8">
+
+            <div class="jumbotron">
+                <h1 id="currentCity"></h1>
+                <hr id="hr">
+                <p id="temp">Temperature (F) : <span id="tempInput"></span></p>
+                <p id="humidity">Humidity: <span id="humInput"></span></p>
+                <p id="wind">Wind Speed: <span id="windInput"></span></p>
+                <p id="uv">UV Index: <span id="uvInput"></span></p>
+
+                
+              </div>
+
+          </div>
+          
+        </div>
+      </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>      
+    <script src="main.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+body {
+    background-color:white
+    
+}
+
+
+.mainHeader {
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 35px;
+    color: white;
+    border-radius: 5px;
+}
+
+#searchBar {
+    margin: 5px;
+}
+
+
+.jumbotron {
+    background-color:lightseagreen;
+    color: white;
+    margin: 5px;
+}
