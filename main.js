@@ -22,14 +22,16 @@
         }
     
 $(".btn").on("click", function(event) {
-        event.preventDefault()
+
+    event.preventDefault()
+
     let city = $("#searchCity").val()
     let apiKey = "c39ae89dcd41698e3a248031a2df1568"
     
     let queryURLSingle = "https://api.openweathermap.org/data/2.5/weather?q="+ city +"&appid=" + apiKey
     let queryURLForecast = "http://api.openweathermap.org/data/2.5/forecast?q=" + city + "&appid="+ apiKey
 
-    // Getting Data For Current Location
+        // Getting Data For Current Location
 
         $.ajax({
             url: queryURLSingle,
@@ -129,7 +131,7 @@ $(".btn").on("click", function(event) {
         })
     
 
-    // function storedCities() {
+    
         // local storage Section
 
         let cityObj = {
@@ -140,9 +142,6 @@ $(".btn").on("click", function(event) {
         document.querySelector("form").reset();
 
         console.log({storedCity})
-        // let history1 = $('#history1')
-        // //trying out new learned way of setting local Storage
-        // history1.text('\n' + JSON.stringify(storedCity, '\t', 2).name)
 
         localStorage.setItem('cities',JSON.stringify(storedCity))
 
@@ -153,7 +152,7 @@ $(".btn").on("click", function(event) {
         $('#history2').text(parse[1].name)
         $('#history3').text(parse[2].name)
         $('#history4').text(parse[3].name)
-    // }   
+    
 
 })
 
