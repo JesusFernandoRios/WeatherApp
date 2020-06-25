@@ -24,3 +24,12 @@ body {
     color: white;
     margin: 5px;
 }
+
+.forecast {
+    background-color: lightseagreen;
+    color: white;
+}
+
+#uvInput {
+    background-color: rgb(0, 38, 255);
+}

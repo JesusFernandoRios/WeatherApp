@@ -20,18 +20,19 @@
             <div class="input-group mb-3" id="searchBar">
                 <form class="input-group-append">
                     <input id="searchCity" type="text" class="form-control" placeholder="Search City" aria-label="Search City" aria-describedby="button-addon2">
-                    <button class="btn btn-outline-secondary" type="submit" id="button-addon2 submitBtn" value="search city">Go</button>
+                    <button class="btn btn-outline-secondary" type="submit" id="button-addon2 submitBtn" value="searchCity">Go</button>
                 </form>
               </div>
 
               <div class="card" style="width: 18rem;">
                 <div class="card-header">
-                  Previous Searches
+                  Previously Searched
                 </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">Cras justo odio</li>
-                  <li class="list-group-item">Dapibus ac facilisis in</li>
-                  <li class="list-group-item">Vestibulum at eros</li>
+                <ul class="list-group list-group-flush" id="historyList">
+                  <span class="list-group-item" id="history1" ></span>
+                  <span class="list-group-item" id="history2" ></span>
+                  <span class="list-group-item" id="history3" ></span>
+                  <span class="list-group-item" id="history4" ></span>
                 </ul>
               </div>
 
@@ -40,20 +41,65 @@
           <div class="col-8">
 
             <div class="jumbotron">
-                <h1 id="currentCity"></h1>
+          
+                <h1 id="currentCity"> Use our search bar for City Weather info!</h1>
+                <img id="singleFav">
                 <hr id="hr">
                 <p id="temp">Temperature (F) : <span id="tempInput"></span></p>
                 <p id="humidity">Humidity: <span id="humInput"></span></p>
                 <p id="wind">Wind Speed: <span id="windInput"></span></p>
                 <p id="uv">UV Index: <span id="uvInput"></span></p>
 
-                
+            </div>
+            <h4> 5-Day Forecast:</h4>
+            <div class="card-group">
+              <div class="card forecast">
+                <div class="card-body">
+                  <h5 class="date1">Date</h5>
+                  <p class="1-temp">Temp(F):<span id="1-temp"></span></p>
+                  <p class="1-hum">Humidity:<span id="1-hum"></span></p>
+                  <img id="fav1">
+                </div>
               </div>
+              <div class="card forecast">
+                <div class="card-body">
+                  <h5 class="date2">Date</h5>
+                  <p class="2-temp">Temp(F):<span id="2-temp"></span></p>
+                  <p class="2-hum">Humidity:<span id="2-hum"></span></p>
+                  <img id="fav2">
+                </div>
+              </div>
+              <div class="card forecast">
+                <div class="card-body">
+                  <h5 class="date3">Date</h5>
+                  <p class="3-temp">Temp(F):<span id="3-temp"></span></p>
+                  <p class="3-hum">Humidity:<span id="3-hum"></span></p>
+                  <img id="fav3">
+                </div>
+              </div>
+              <div class="card forecast">
+                <div class="card-body">
+                  <h5 class="date4">Date</h5>
+                  <p class="4-temp">Temp(F):<span id="4-temp"></span></p>
+                  <p class="4-hum">Humidity:<span id="4-hum"></span></p>
+                  <img id="fav4">
+                </div>
+              </div>
+              <div class="card forecast">
+                <div class="card-body">
+                  <h5 class="date5">Date</h5>
+                  <p class="5-temp">Temp(F):<span id="5-temp"></span></p>
+                  <p class="5-hum">Humidity:<span id="5-hum"></span></p>
+                  <img id="fav5">
+                </div>
+              </div>
+            </div>
+            
+            
 
           </div>
-          
         </div>
-      </div>
+     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>      
     <script src="main.js"></script>
 
