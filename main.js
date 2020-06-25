@@ -29,7 +29,7 @@ $(".btn").on("click", function(event) {
     let apiKey = "c39ae89dcd41698e3a248031a2df1568"
     
     let queryURLSingle = "https://api.openweathermap.org/data/2.5/weather?q="+ city +"&appid=" + apiKey
-    let queryURLForecast = "http://api.openweathermap.org/data/2.5/forecast?q=" + city + "&appid="+ apiKey
+    let queryURLForecast = "https://api.openweathermap.org/data/2.5/forecast?q=" + city + "&appid="+ apiKey
 
         // Getting Data For Current Location
 
