@@ -10,7 +10,7 @@
 
     let cityHistory = JSON.parse(localStorage.getItem('cities'))
 
-    function init(){
+    
         if(localStorage['cities']){
         $('#history1').text(cityHistory[0].name)
         $('#history2').text(cityHistory[1].name)
@@ -20,8 +20,6 @@
         }else{
             console.log('nothing here')
         }
-    }
-    init();
     
 $(".btn").on("click", function(event) {
         event.preventDefault()
@@ -33,7 +31,6 @@ $(".btn").on("click", function(event) {
 
     // Getting Data For Current Location
 
-    // function currentWeather(){
         $.ajax({
             url: queryURLSingle,
             method: "GET"
@@ -61,7 +58,7 @@ $(".btn").on("click", function(event) {
         $("#tempInput").text("" + tempF.toFixed(1));
         getUvIndex(apiKey, lat, lon);
         })
-    // }
+
     // UV Index Data
     // used function to call UVindex in weather ajax to use lat and lon variables 
     function getUvIndex(apiKey, lat, lon){
@@ -81,7 +78,7 @@ $(".btn").on("click", function(event) {
     }
 
     // 5-Day Forecast Section
-    // function forecastWeather(){
+    
         $.ajax({
             url: queryURLForecast,
             method: "GET"
@@ -130,7 +127,7 @@ $(".btn").on("click", function(event) {
 
             
         })
-    // }
+    
 
     // function storedCities() {
         // local storage Section
