@@ -18,6 +18,11 @@ body {
     margin: 5px;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
 
 .jumbotron {
     background-color:lightseagreen;
