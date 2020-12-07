@@ -5,16 +5,7 @@
 
     let cityHistory = JSON.parse(localStorage.getItem('cities'))
 
-    
-        if(localStorage['cities']){
-        $('#history1').text(cityHistory[0].name)
-        $('#history2').text(cityHistory[1].name)
-        $('#history3').text(cityHistory[2].name)
-        $('#history4').text(cityHistory[3].name) 
 
-        }else{
-            console.log('nothing here')
-        }
     
 $(".btn").on("click", function(event) {
 
