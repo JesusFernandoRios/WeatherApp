@@ -1,10 +1,5 @@
 
-
-
-
-
     let storedCity = [];
-
 
     localStorage.getItem('cities')
 

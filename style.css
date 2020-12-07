@@ -21,6 +21,7 @@ body {
 .container {
     display: flex;
     flex-direction: column;
+    
 }
 
 
@@ -35,6 +36,30 @@ body {
     color: white;
 }
 
+
 #uvInput {
     background-color: rgb(0, 38, 255);
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.weather__content {
+    width: 70%;
+}
+
+@media all and (max-width:767px){
+    .prev__search {
+        margin-left: 13%
+    }
+
+    .weather__content {
+        width: 95%;
+        margin-left: 2.5%;
+        text-align: center;
+        margin-top: 10px;
+    }
+
 }
